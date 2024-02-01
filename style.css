@@ -13,8 +13,46 @@ body{
 }
 
 h1{
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 50px;
     color: white;
 }
 
+#table {
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    padding-top: 50px;
+}
+/* iserisco uno stile in più a square per il bckcolor  */
+.square{
+    background-color: rgb(19, 137, 178);
+}
+
+#table .square {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(70px - 5px / 10 * 9);
+    height: calc(70px - 5px / 10 * 9);
+
+    border: solid 1px black;
+}
+
+.fizz {
+    background-color: rgb(12, 214, 161);
+}
+
+.buzz {
+    background-color: rgb(255, 209, 102);
+}
+
+.fizz.buzz {
+    background-color: rgb(237, 69, 110);
+}
